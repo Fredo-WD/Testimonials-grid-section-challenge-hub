@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Neutral */
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+    html {
+        height: 100%;
+    }
+
+ body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Light-grayish-blue);
+    min-height: 100%;
+}
+
+.container {
+    padding: 4.438rem 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.testimonial {
+    background-color: var(--White);
+    border-radius: .7rem;
+    padding: 1.625rem 2rem 2rem 2rem;
+}
+
+.daniel-clifford {
+    background-color: var(--Moderate-violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.jonathan-walters {
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.patrick-abrams {
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.testimonial__attestant {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.attestant__avatar {
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.avatar__purple-border {
+    border: 2px solid #A775F1;
+
+}
+
+.name-verified__name {
+    font-size: 0.813rem;
+    font-weight: 500;
+    color: var(--White);
+}
+
+.name-verified__verified {
+    font-size: 0.688rem;
+    font-weight: 500;
+    color: var(--White);
+    opacity: 50%;
+}
+
+.name__grayish-blue {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.verified__grayish-blue {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 50%;
+}
+
+.testimonial__heading {
+    color: var(--White);
+    font-weight: 600;
+    padding: 1.125rem 0 1.125rem 0;
+}
+
+.heading__color {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.testimonial__text {
+    font-size: 0.813rem;
+    font-weight: 500;
+    color: var(--White);
+    opacity: 70%;
+}
+
+.text__grayish-blue {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 70%;
+}
+
+@media all and (min-width:1440px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 10.313rem;
+    }
+
+    .daniel-clifford {
+        grid-column: span 2;
+    }
+
+    .kira-whittle {
+        grid-column: 4;
+        grid-row: 1 / span 2 ;
+    }
+
+    .patrick-abrams {
+        grid-column: span 2;
+    }
+}
