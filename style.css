@@ -39,6 +39,8 @@
     background-color: var(--White);
     border-radius: .7rem;
     padding: 1.625rem 2rem 2rem 2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 
 .daniel-clifford {
@@ -99,6 +101,7 @@
     color: var(--White);
     font-weight: 600;
     padding: 1.125rem 0 1.125rem 0;
+    font-size: 1rem;
 }
 
 .heading__color {
@@ -116,6 +119,9 @@
     color: var(--Very-dark-grayish-blue);
     opacity: 70%;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 @media all and (min-width:1440px){
     .container {
